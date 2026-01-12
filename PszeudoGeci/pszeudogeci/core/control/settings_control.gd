@@ -6,24 +6,15 @@ func _on_close_button_pressed() -> void:
 
 
 func _on_show_input_check_button_toggled(toggled_on: bool) -> void:
-	if toggled_on:
-		Settings.show_input = true
-	else:
-		Settings.show_input = false
+	Settings.toggle_show_input(toggled_on)
 
 
 func _on_show_output_check_button_toggled(toggled_on: bool) -> void:
-	if toggled_on:
-		Settings.show_output = true
-	else:
-		Settings.show_output = false
+	Settings.toggle_show_output(toggled_on)
 
 
 func _on_show_first_line_check_button_toggled(toggled_on: bool) -> void:
-	if toggled_on:
-		Settings.show_first_line = true
-	else:
-		Settings.show_first_line = false
+	Settings.toggle_show_first_line(toggled_on)
 
 
 func _on_show_settings_button_pressed() -> void:

@@ -46,7 +46,7 @@ grow_vertical = 2
 
 [node name="Settings" parent="Control" instance=ExtResource("4_csopv")]
 layout_mode = 1
-offset_left = 325.0
-offset_top = -262.0
-offset_right = 325.0
-offset_bottom = -262.0
+offset_left = 295.0
+offset_top = -253.0
+offset_right = 295.0
+offset_bottom = -253.0

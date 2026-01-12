@@ -7,5 +7,5 @@ script = ExtResource("1_yyfxj")
 name = "Kiválogatás (eredeti tömbben, eredeti elemek megtartásával)"
 input = "x - T tömb, n - egész (tömb mérete), P - logikai"
 output = "x - T tömb, db - egész"
-lines = Array[String](["függvény KIVÁLOGATÁS(x: T tömb, n: egész, P: logikai)", "\\tdb <- 0", "\\tciklus i <- 1-től n-ig", "\\t\\tha P(x[i]) akkor", "\\t\\t\\tdb <- db + 1", "\\t\\t\\tx[db] <-> x[i]", "\\t\\telágazás vége", "\\tciklus cége", "\\tvissza db", "függvény vége"])
+lines = Array[String](["függvény KIVÁLOGATÁS(x: T tömb, n: egész, P: logikai)", "\\tdb <- 0", "\\tciklus i <- 1-től n-ig", "\\t\\tha P(x[i]) akkor", "\\t\\t\\tdb <- db + 1", "\\t\\t\\tx[db] <-> x[i]", "\\t\\telágazás vége", "\\tciklus vége", "\\tvissza db", "függvény vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"
