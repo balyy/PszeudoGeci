@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://jyvewx7gkkit"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_1v1kb"]
+
+[resource]
+script = ExtResource("1_1v1kb")
+name = "Megszámlálás"
+input = "x - T tömb, n - egész (tömb mérete), P - logikai (tulajdonság)"
+output = "db - egész (darabszám)"
+lines = Array[String](["függvény MEGSZÁMLÁLÁS(x: T tömb, n: egész, P: logikai)", "\\tdb <- 0", "\\tciklus i <- 1-től n-ig", "\\t\\tha P(x[i]) akkor", "\\t\\t\\tdb <- db + 1", "\\t\\telágazás vége", "\\tciklus vége", "\\tvissza db", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

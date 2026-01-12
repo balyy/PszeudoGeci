@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://btr1i4v5rj38a"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_xngph"]
+
+[resource]
+script = ExtResource("1_xngph")
+name = "Hanoi tornyai"
+input = "N - egész, forrás - rúd, cél - rúd, segéd - rúd"
+output = ""
+lines = Array[String](["eljárás HANOI(N: egész, forrás: rúd, cél: rúd, segéd: rúd)", "\\tha N = 1 akkor", "\\t\\tMOZGAT(1, forrás, cél)", "\\tkülönben", "\\t\\tHANOI(N - 1, forrás, segéd, cél)", "\\t\\tMOZGAT(N, forrás, cél)", "\\t\\tHANOI(N - 1, segéd, cél, forrás)", "\\telágazás vége", "eljárás vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

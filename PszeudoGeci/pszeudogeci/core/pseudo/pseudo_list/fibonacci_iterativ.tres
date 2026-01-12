@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://c8kfqdok76mdm"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_o6ep8"]
+
+[resource]
+script = ExtResource("1_o6ep8")
+name = "Fibonacci sorozat iteratív"
+input = "N - egész"
+output = "aktuális - érték"
+lines = Array[String](["függvény FIBONACCI_ITERATÍV(N: egész)", "\\taktuális <- 1", "\\telőző <- 1", "\\tciklus i <- 1-től (N - 1)-ig", "\\t\\tátmeneti <- aktuális + előző", "\\t\\telőző <- aktuális", "\\t\\taktuális <- átmeneti", "\\tciklus vége", "\\tvissza átmeneti", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

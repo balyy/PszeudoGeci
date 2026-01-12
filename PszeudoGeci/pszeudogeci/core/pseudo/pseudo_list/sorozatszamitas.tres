@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://cs82pi1d2ftgg"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_rhxob"]
+
+[resource]
+script = ExtResource("1_rhxob")
+name = "Sorozatszámítás"
+input = "x - T tömb, n - egész (tömb mérete)"
+output = "érték - T"
+lines = Array[String](["függvény SOROZATSZÁMÍTÁS(x: T tömb, n: egész)", "\\térték <- érték0", "\\tciklus i <- 1-től n-ig", "\\t\\térték <- érték (+) x[i]", "\\tciklus vége", "\\tvissza érték", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://b6xwhaqn3n8gi"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_rjukw"]
+
+[resource]
+script = ExtResource("1_rjukw")
+name = "Másolás"
+input = "x - T tömb, n - egész (tömb mérete), f - művelet"
+output = "y - T tömb"
+lines = Array[String](["függvény MÁSOLÁS(x: T tömb, n: egész, f: művelet)", "\\ty <- LÉTREHOZ(T)[n]", "\\tciklus i <- 1-től n-ig", "\\t\\ty[i] <- f(x[i])", "\\tciklus vége", "\\tvissza y", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

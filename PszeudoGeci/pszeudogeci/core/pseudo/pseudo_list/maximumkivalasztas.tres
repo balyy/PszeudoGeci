@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://b1bk1jukyb8e4"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_dwo2c"]
+
+[resource]
+script = ExtResource("1_dwo2c")
+name = "Maximumkiválasztás"
+input = "x - T tömb, n - egész (tömb mérete); ahol T összehasonlítható"
+output = "max - egész"
+lines = Array[String](["függvény MAXIMUMKIVÁLASZTÁS(x: T tömb, n: egész)", "\\tmax <- 1", "\\tciklus i <- 2-től n-ig", "\\t\\tha x[i] > x[max] akkor", "\\t\\t\\tmax <- i", "\\t\\telágazás vége", "\\tciklus vége", "\\tvissza max", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

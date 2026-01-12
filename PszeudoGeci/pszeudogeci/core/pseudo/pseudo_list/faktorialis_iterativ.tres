@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://bf4dvmlkmyk63"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_uv57g"]
+
+[resource]
+script = ExtResource("1_uv57g")
+name = "Faktoriális iteratív"
+input = "N - egész"
+output = "érték - egész"
+lines = Array[String](["függvény FAKTORIÁLIS_ITERATÍV(N: egész)", "\\térték <- 1", "\\tciklus i <- 2-től N-ig", "\\t\\térték <- érték * i", "\\tciklus vége", "\\tvissza érték", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

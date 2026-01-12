@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://c42fswfeblhjp"]
+
+[ext_resource type="Script" uid="uid://ccf85xp1dsgoi" path="res://core/main.gd" id="1_csopv"]
+[ext_resource type="PackedScene" uid="uid://bdbnnd1s317md" path="res://core/control/new_quiz.tscn" id="2_csopv"]
+[ext_resource type="PackedScene" uid="uid://cdp7rpsdy3txa" path="res://core/control/check.tscn" id="3_xa854"]
+[ext_resource type="PackedScene" uid="uid://bcgb68cb6ud66" path="res://core/control/settings_control.tscn" id="4_csopv"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_csopv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Control" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="NewQuiz" parent="Control" instance=ExtResource("2_csopv")]
+layout_mode = 1
+offset_left = 576.0
+offset_top = -24.0
+offset_right = 576.0
+offset_bottom = -24.0
+
+[node name="Check" parent="Control" instance=ExtResource("3_xa854")]
+layout_mode = 1
+offset_left = 576.0
+offset_top = 24.0
+offset_right = 576.0
+offset_bottom = 24.0
+
+[node name="CurrentQuiz" type="Control" parent="Control"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Settings" parent="Control" instance=ExtResource("4_csopv")]
+layout_mode = 1
+offset_left = 325.0
+offset_top = -262.0
+offset_right = 325.0
+offset_bottom = -262.0

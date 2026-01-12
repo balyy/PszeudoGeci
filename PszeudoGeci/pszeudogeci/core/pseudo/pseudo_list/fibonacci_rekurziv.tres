@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://upymegfb46jd"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_fdfhl"]
+
+[resource]
+script = ExtResource("1_fdfhl")
+name = "Fibonacci sorozat rekurzív"
+input = "N - egész"
+output = "N-edik Fibonacci szám"
+lines = Array[String](["függvény FIBONACCI_REKURZÍV(N: egész)", "\\tha N <= 1 akkor", "\\t\\tvissza 1", "\\tkülönben", "\\t\\tvissza FIBONACCI_REKURZÍV(N - 2) + FIBONACCI_REKURZÍV(N - 1)", "\\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

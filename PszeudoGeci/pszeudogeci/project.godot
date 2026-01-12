@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="PszeudoGeci"
+config/description="Készítette: Virágh Balázs"
+config/version="1.0"
+run/main_scene="uid://c42fswfeblhjp"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+boot_splash/image="uid://bpxjis8gwqbjg"
+config/icon="uid://di36rj36f41r5"
+
+[autoload]
+
+Signalbus="*res://core/signalbus.gd"
+Settings="*res://core/settings.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[file_customization]
+
+folder_colors={
+"res://core/control/": "teal"
+}
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://crodr7eq0safm"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_sgxqe"]
+
+[resource]
+script = ExtResource("1_sgxqe")
+name = "Buborékrendezés"
+input = "x - T tömb, n - egész (tömb mérete); ahol T összehasonlítható"
+output = "x - T rendezett tömb"
+lines = Array[String](["eljárás BUBORÉKRENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- n-től 2-ig", "\\t\\tciklus j <- 1-től (i - 1)-ig", "\\t\\t\\tha x[j] > x[j + 1] akkor", "\\t\\t\\t\\tx[j] <-> x[j + 1]", "\\t\\t\\telágazás vége", "\\t\\tciklus vége", "\\tciklus vége", "eljárás vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

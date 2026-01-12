@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://bqm636tvy4p2p"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_0qvr4"]
+
+[resource]
+script = ExtResource("1_0qvr4")
+name = "a az N-ediken rekurzív"
+input = "a - szám, N - egész"
+output = "a^N"
+lines = Array[String](["függvény HATVÁNY_REKURZÍV(a: szám, N: egész)", "\\tha N = 1 akkor", "\\t\\tvissza 1", "\\tkülönben", "\\t\\tvissza a * HATVÁNY_REKURZÍV(a: szám, N: egész)", "\\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://dsmte82ocls3f"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_5tb24"]
+
+[resource]
+script = ExtResource("1_5tb24")
+name = "Szétválogatás"
+input = "x - T tömb, n - egész (tömb mérete), P - logikai"
+output = "y1 - T tömb, db1 - egész, y2- T tömb, db2 - egész"
+lines = Array[String](["függvény SZÉTVÁLOGATÁS(x: T tömb, n: egész, P: logikai", "\\ty1 <- LÉTREHOZ(T)[n]", "\\ty2 <- LÉTREHOZ(T)[n]", "\\tdb1 <- 0", "\\tdb2 <- 0", "\\tciklus i <- 1-től n-ig", "\\t\\tha P(x[i]) akkor", "\\t\\t\\tdb1 <- db1 + 1", "\\t\\t\\ty1[db1] <- x[i]", "\\t\\tkülönben", "\\t\\t\\tdb2 <- db 2 + 1", "\\t\\t\\ty2[db2] <- x[i]", "\\t\\telágazás vége", "\\tciklus vége", "\\tvissza (y1, db1, y2, db2)", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

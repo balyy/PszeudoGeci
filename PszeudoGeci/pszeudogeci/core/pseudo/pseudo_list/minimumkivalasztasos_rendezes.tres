@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://jrkifh5vyrwj"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_3wrcf"]
+
+[resource]
+script = ExtResource("1_3wrcf")
+name = "Minimumkiválasztásos rendezés"
+input = "x - T tömb, n - egész (tömb mérete); ahol T összehasonlítható"
+output = "x - T rendezett tömb"
+lines = Array[String](["eljárás MINIMUMKIVÁLASZTÁSOS_RENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- 1-től (n - 1)-ig", "\\t\\tmin <- i", "\\t\\tciklus j <- (i + 1)-tól n-ig", "\\t\\t\\tha x[min] > x[j] akkor", "\\t\\t\\t\\tmin <- j", "\\t\\t\\telágazás vége", "\\t\\tciklus vége", "\\t\\tx[i] <-> x[min]", "\\tciklus vége", "eljárás vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

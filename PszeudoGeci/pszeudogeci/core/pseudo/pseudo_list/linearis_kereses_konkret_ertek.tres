@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://co8s783740qvp"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_fx732"]
+
+[resource]
+script = ExtResource("1_fx732")
+name = "Lineáris Keresés (konkrét érték)"
+input = "x - T tömb, n - egész, érték - T"
+output = "van - logikai, idx -  egész"
+lines = Array[String](["függvény LINEÁRIS_KERESÉS(x: T tömb, n: egész, érték: T)", "\\ti <- 1", "\\tciklus amíg (i <= n) ÉS (x[i] != érték)", "\\t\\ti <- i+1 ", "\\tciklus vége", "\\tvan <- (i <=n)", "\\tha van akkor", "\\t\\tidx <- i", "\\t\\tvissza (van, idx)", "\\tkülönben", "\\t\\tvissza (van, idx)", "\\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

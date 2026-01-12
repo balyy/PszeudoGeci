@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://bpiblnhnbmtdq"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_yyfxj"]
+
+[resource]
+script = ExtResource("1_yyfxj")
+name = "Kiválogatás (eredeti tömbben, eredeti elemek megtartásával)"
+input = "x - T tömb, n - egész (tömb mérete), P - logikai"
+output = "x - T tömb, db - egész"
+lines = Array[String](["függvény KIVÁLOGATÁS(x: T tömb, n: egész, P: logikai)", "\\tdb <- 0", "\\tciklus i <- 1-től n-ig", "\\t\\tha P(x[i]) akkor", "\\t\\t\\tdb <- db + 1", "\\t\\t\\tx[db] <-> x[i]", "\\t\\telágazás vége", "\\tciklus cége", "\\tvissza db", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

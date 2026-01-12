@@ -1,0 +1,115 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcgb68cb6ud66"]
+
+[ext_resource type="Script" uid="uid://bx50k55qbbnun" path="res://core/control/settings_control.gd" id="1_sg0hk"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_sg0hk")
+
+[node name="SettingsPanelContainer" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.5
+offset_top = -62.5
+offset_right = 120.5
+offset_bottom = 62.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingsPanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsPanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsPanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Beállítások"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="CloseButton" type="Button" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer2"]
+visible = false
+layout_direction = 3
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "X"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="SettingsPanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Bemenet megjelenítése"
+
+[node name="ShowInputCheckButton" type="CheckButton" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="SettingsPanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Kimenet megjelenítése "
+
+[node name="ShowOutputCheckButton" type="CheckButton" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="SettingsPanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Első sor megjelenítése  "
+
+[node name="ShowFirstLineCheckButton" type="CheckButton" parent="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="ShowSettingsButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -93.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "Beállítások"
+
+[connection signal="pressed" from="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer2/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="toggled" from="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/ShowInputCheckButton" to="." method="_on_show_input_check_button_toggled"]
+[connection signal="toggled" from="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer3/ShowOutputCheckButton" to="." method="_on_show_output_check_button_toggled"]
+[connection signal="toggled" from="SettingsPanelContainer/MarginContainer/VBoxContainer/HBoxContainer4/ShowFirstLineCheckButton" to="." method="_on_show_first_line_check_button_toggled"]
+[connection signal="pressed" from="ShowSettingsButton" to="." method="_on_show_settings_button_pressed"]

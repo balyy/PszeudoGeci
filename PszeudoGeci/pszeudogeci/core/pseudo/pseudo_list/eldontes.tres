@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://bjroh0hm1gphc"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_j26x6"]
+
+[resource]
+script = ExtResource("1_j26x6")
+name = "Eldöntés"
+input = "x - T tömb, n - egész (tömb mérete), P - logikai (tulajdonság)"
+output = "van - logikai"
+lines = Array[String](["függvény ELDÖNTÉS(x: T tömb, n: egész, P: logikai)", "\\ti <- 1", "\\tciklus amíg (i<= n) ÉS !P(x[i])", "\\t\\ti <- i+1", "\\tciklus vége", "\\tvan <- (i <= n)", "\\tvissza van", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"
