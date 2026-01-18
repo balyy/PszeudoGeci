@@ -7,5 +7,5 @@ script = ExtResource("1_fbtfs")
 name = "Beillesztéses rendezés"
 input = "x - T tömb, n - egész (tömb mérete); ahol T összehasonlítható"
 output = "x - T rendezett tömb"
-lines = Array[String](["eljárás BEILLESZTÉSES_RENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- 2-től (n - 1)-ig", "\\t\\tj <- i - 1", "\\t\\tciklus amíg (j > 0) ÉS (x[j] > x[j + 1])", "\\t\\t\\tx[j] <-> x[j + 1]", "\\t\\t\\tj <- j - 1", "\\t\\tciklus vége", "\\tciklus vége", "eljárás vége"])
+lines = Array[String](["eljárás BEILLESZTÉSES_RENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- 2-től n-ig", "\\t\\tj <- i - 1", "\\t\\tciklus amíg (j > 0) ÉS (x[j] > x[j + 1])", "\\t\\t\\tx[j] <-> x[j + 1]", "\\t\\t\\tj <- j - 1", "\\t\\tciklus vége", "\\tciklus vége", "eljárás vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"
