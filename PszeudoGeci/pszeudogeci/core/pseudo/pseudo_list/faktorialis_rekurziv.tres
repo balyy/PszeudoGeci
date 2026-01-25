@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_rjfod")
 name = "Faktoriális rekurzív"
-input = "N: egész"
+input = "N - egész"
 output = "érték - egész"
 lines = Array[String](["függvény FAKTORIÁLIS_REKURZÍV(N: egész)", "\\tha N = 0 akkor", "\\t\\tvissza 1", "\\tkülönben", "\\t\\tvissza N * FAKTORIÁLIS_REKURZÍV(N - 1)", "\\telágazás vége", "függvény vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"
