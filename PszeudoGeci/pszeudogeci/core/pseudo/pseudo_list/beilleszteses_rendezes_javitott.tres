@@ -7,5 +7,5 @@ script = ExtResource("1_74cjg")
 name = "Beillesztéses rendezés (javított)"
 input = "x - T tömb, n - egész (tömb mérete); ahol T összehasonlítható"
 output = "x - T rendezett tömb"
-lines = Array[String](["eljárás JAVÍTOTT_BEILLESZTÉSES_RENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- 2-től n-ig", "\\t\\tj <- i - 1", "\\t\\tsegéd <- x[i]", "\\t\\tciklus amíg (j > 0) ÉS (x[j] > segéd)", "\\t\\t\\tx[j] <-> x[j + 1]", "\\t\\t\\tj <- j - 1", "\\t\\tciklus vége", "\\t\\tx[j + 1] <- segéd", "\\tciklus vége", "eljárás vége"])
+lines = Array[String](["eljárás JAVÍTOTT_BEILLESZTÉSES_RENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- 2-től n-ig", "\\t\\tj <- i - 1", "\\t\\tsegéd <- x[i]", "\\t\\tciklus amíg (j > 0) ÉS (x[j] > segéd)", "\\t\\t\\tx[j+1] <- x[j]", "\\t\\t\\tj <- j - 1", "\\t\\tciklus vége", "\\t\\tx[j + 1] <- segéd", "\\tciklus vége", "eljárás vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"

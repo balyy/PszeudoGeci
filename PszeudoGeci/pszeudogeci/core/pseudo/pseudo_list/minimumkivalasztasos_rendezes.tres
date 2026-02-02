@@ -7,5 +7,5 @@ script = ExtResource("1_3wrcf")
 name = "Minimumkiválasztásos rendezés"
 input = "x - T tömb, n - egész (tömb mérete); ahol T összehasonlítható"
 output = "x - T rendezett tömb"
-lines = Array[String](["eljárás MINIMUMKIVÁLASZTÁSOS_RENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- 1-től (n - 1)-ig", "\\t\\tmin <- i", "\\t\\tciklus j <- (i + 1)-tól n-ig", "\\t\\t\\tha x[min] > x[j] akkor", "\\t\\t\\t\\tmin <- j", "\\t\\t\\telágazás vége", "\\t\\tciklus vége", "\\t\\tx[i] <-> x[min]", "\\tciklus vége", "eljárás vége"])
+lines = Array[String](["eljárás MINIMUMKIVÁLASZTÁSOS_RENDEZÉS(címszerint x: T tömb, n: egész)", "\\tciklus i <- 1-től (n - 1)-ig", "\\t\\tmin <- i", "\\t\\tciklus j <- (i + 1)-től n-ig", "\\t\\t\\tha x[min] > x[j] akkor", "\\t\\t\\t\\tmin <- j", "\\t\\t\\telágazás vége", "\\t\\tciklus vége", "\\t\\tx[i] <-> x[min]", "\\tciklus vége", "eljárás vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"
