@@ -7,5 +7,5 @@ script = ExtResource("1_rhnpp")
 name = "Javított Buborékrendezés"
 input = "x - T tömb, n - egész (tömb mérete); ahol T összehasonlítható"
 output = "x - T rendezett tömb"
-lines = Array[String](["eljárás JAVÍTOTT_BUBORÉKRENDEZÉS(címszerint x: T tömb, n: egész)", "\\ti <- n", "\\tciklus amíg i >= 2", "\\t\\tidx <- 0", "\\t\\tciklus j <- 1-től (i - 1)-ig", "\\t\\t\\tha x[j] > x[j + 1] akkor", "\\t\\t\\t\\tx[j] <-> x[j + 1]", "\\t\\t\\t\\tidx <- j", "\\t\\t\\telágazás vége", "\\t\\ticiklus vége", "\\t\\ti <- idx", "\\tciklus vége", "eljárás vége"])
+lines = Array[String](["eljárás JAVÍTOTT_BUBORÉKRENDEZÉS(címszerint x: T tömb, n: egész)", "\\ti <- n", "\\tciklus amíg i >= 2", "\\t\\tidx <- 0", "\\t\\tciklus j <- 1-től (i - 1)-ig", "\\t\\t\\tha x[j] > x[j + 1] akkor", "\\t\\t\\t\\tx[j] <-> x[j + 1]", "\\t\\t\\t\\tidx <- j", "\\t\\t\\telágazás vége", "\\t\\tciklus vége", "\\t\\ti <- idx", "\\tciklus vége", "eljárás vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"
