@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c42fswfeblhjp"]
+[gd_scene load_steps=6 format=3 uid="uid://c42fswfeblhjp"]
 
 [ext_resource type="Script" uid="uid://ccf85xp1dsgoi" path="res://core/main.gd" id="1_csopv"]
 [ext_resource type="PackedScene" uid="uid://bdbnnd1s317md" path="res://core/control/new_quiz.tscn" id="2_csopv"]
 [ext_resource type="PackedScene" uid="uid://cdp7rpsdy3txa" path="res://core/control/check.tscn" id="3_xa854"]
 [ext_resource type="PackedScene" uid="uid://bcgb68cb6ud66" path="res://core/control/settings_control.tscn" id="4_csopv"]
+[ext_resource type="Script" uid="uid://cki0jia3sis8a" path="res://core/control/misc/label.gd" id="5_xa854"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_csopv")
@@ -50,3 +51,16 @@ offset_left = 295.0
 offset_top = -253.0
 offset_right = 295.0
 offset_bottom = -253.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -571.0
+offset_top = 300.0
+offset_right = -570.0
+offset_bottom = 323.0
+grow_vertical = 0
+text = "version"
+script = ExtResource("5_xa854")

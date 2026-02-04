@@ -7,5 +7,5 @@ script = ExtResource("1_fx732")
 name = "Lineáris Keresés (konkrét érték)"
 input = "x - T tömb, n - egész, érték - T"
 output = "van - logikai, idx -  egész"
-lines = Array[String](["függvény LINEÁRIS_KERESÉS(x: T tömb, n: egész, érték: T)", "\\ti <- 1", "\\tciklus amíg (i <= n) ÉS (x[i] != érték)", "\\t\\ti <- i+1 ", "\\tciklus vége", "\\tvan <- (i <=n)", "\\tha van akkor", "\\t\\tidx <- i", "\\t\\tvissza (van, idx)", "\\tkülönben", "\\t\\tvissza van", "\\telágazás vége", "függvény vége"])
+lines = Array[String](["függvény LINEÁRIS_KERESÉS(x: T tömb, n: egész, érték: T)", "\\ti <- 1", "\\tciklus amíg (i <= n) ÉS (x[i] != érték)", "\\t\\ti <- i + 1 ", "\\tciklus vége", "\\tvan <- (i <= n)", "\\tha van akkor", "\\t\\tidx <- i", "\\t\\tvissza (van, idx)", "\\tkülönben", "\\t\\tvissza van", "\\telágazás vége", "függvény vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"

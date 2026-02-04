@@ -7,5 +7,5 @@ script = ExtResource("1_0qvr4")
 name = "a az N-ediken rekurzív"
 input = "a - szám, N - egész"
 output = "a^N"
-lines = Array[String](["függvény HATVÁNY_REKURZÍV(a: szám, N: egész)", "\\tha N = 1 akkor", "\\t\\tvissza a", "\\tkülönben", "\\t\\tvissza a * HATVÁNY_REKURZÍV(N-1)", "\\telágazás vége", "függvény vége"])
+lines = Array[String](["függvény HATVÁNY_REKURZÍV(a: szám, N: egész)", "\\tha N = 1 akkor", "\\t\\tvissza a", "\\tkülönben", "\\t\\tvissza a * HATVÁNY_REKURZÍV(a, N-1)", "\\telágazás vége", "függvény vége"])
 metadata/_custom_type_script = "uid://bilbv0dlql50b"
