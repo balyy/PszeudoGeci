@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://ddwa3c1awp27j"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Összefuttatás programozási tétel (Halmazok uniója 2.22)"
+input = "x1: T rendezett tömb, n1: egész, x2: T rendezett tömb, n2: egész"
+output = "y: T rendezett tömb, db: egész"
+lines = Array[String](["függvény Összefuttatás(x1: T rendezett tömb, n1: egész, x2: T rendezett tömb, n2: egész)", "\ty <- Létrehoz(T)[n1 + n2]", "\ti <- 1", "\tj <- 1", "\tdb <- 0", "\tciklus amíg (i <= n1) és (j <= n2)", "\t\tdb <- db + 1", "\t\tha x1[i] < x2[j] akkor", "\t\t\ty[db] <- x1[i]", "\t\t\ti <- i + 1", "\t\tkülönben", "\t\t\tha x1[i] > x2[j] akkor", "\t\t\t\ty[db] <- x2[j]", "\t\t\t\tj <- j + 1", "\t\t\tkülönben", "\t\t\t\ty[db] <- x1[i]", "\t\t\t\ti <- i + 1", "\t\t\t\tj <- j + 1", "\t\t\telágazás vége", "\t\telágazás vége", "\tciklus vége", "\tciklus amíg i <= n1", "\t\tdb <- db + 1", "\t\ty[db] <- x1[i]", "\t\ti <- i + 1", "\tciklus vége", "\tciklus amíg j <= n2", "\t\tdb <- db + 1", "\t\ty[db] <- x2[j]", "\t\tj <- j + 1", "\tciklus vége", "\tvissza (y, db)", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

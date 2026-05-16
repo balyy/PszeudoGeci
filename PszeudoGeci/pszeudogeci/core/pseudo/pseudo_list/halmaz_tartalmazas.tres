@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://ninqwbmbo34f"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Tartalmazás vizsgálat (5.12)"
+input = "a: T halmaz, n: egész, érték: T"
+output = "l: logikai"
+lines = Array[String](["függvény TartalmazzaE(a: T halmaz, n: egész, érték: T)", "\tbal <- 1", "\tjobb <- n", "\tcenter <- [(bal+jobb)/2]", "\tciklus amíg (bal <= jobb) és (a[center] != érték)", "\t\tha a[center] > érték akkor", "\t\t\tjobb <- center - 1", "\t\tkülönben", "\t\t\tbal <- center + 1", "\t\telágazás vége", "\t\tcenter <- [(bal+jobb)/2]", "\tciklus vége", "\tl <- (bal <= jobb)", "\tvissza l", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

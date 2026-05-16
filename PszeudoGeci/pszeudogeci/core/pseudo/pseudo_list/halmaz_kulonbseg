@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://halmazkulonbseg516"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Halmazok különbsége (5.16)"
+input = "a1: T halmaz, n1: egész, a2: T halmaz, n2: egész"
+output = "b: T halmaz, db: egész"
+lines = Array[String](["függvény HalmazKulonbseg(a1: T halmaz, n1: egész, a2: T halmaz, n2: egész)", "\tb <- Létrehoz(T)[n1]", "\ti <- 1", "\tj <- 1", "\tdb <- 0", "\tciklus amíg (i <= n1) és (j <= n2)", "\t\tha a1[i] < a2[j] akkor", "\t\t\tdb <- db + 1", "\t\t\tb[db] <- a1[i]", "\t\t\ti <- i + 1", "\t\tkülönben ha a1[i] > a2[j] akkor", "\t\t\tj <- j + 1", "\t\tkülönben", "\t\t\ti <- i + 1", "\t\t\tj <- j + 1", "\t\telágazás vége", "\tciklus vége", "\tciklus amíg i <= n1", "\t\tdb <- db + 1", "\t\tb[db] <- a1[i]", "\t\ti <- i + 1", "\tciklus vége", "\tvissza (b, db)", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

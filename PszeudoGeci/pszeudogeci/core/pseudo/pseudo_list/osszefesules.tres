@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://osszefesules603"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Összefésülés (6.3)"
+input = "x: T tömb, bal: egész, center: egész, jobb: egész"
+output = "helyben módosítja x-et"
+lines = Array[String](["eljárás Összefésül(címszerint x: T tömb, bal: egész, center: egész, jobb: egész)", "\tn1 <- center - bal + 1", "\tn2 <- jobb - center", "\ty1 <- Létrehoz(T)[n1 + 1]", "\tciklus i <- 1-től n1-ig", "\t\ty1[i] <- x[bal + i - 1]", "\tciklus vége", "\ty2 <- Létrehoz(T)[n2 + 1]", "\tciklus j <- 1-től n2-ig", "\t\ty2[j] <- x[center + j]", "\tciklus vége", "\ty1[n1 + 1] <- +∞", "\ty2[n2 + 1] <- +∞", "\ti <- 1", "\tj <- 1", "\tciklus k <- bal-től jobb-ig", "\t\tha y1[i] <= y2[j] akkor", "\t\t\tx[k] <- y1[i]", "\t\t\ti <- i + 1", "\t\tkülönben", "\t\t\tx[k] <- y2[j]", "\t\t\tj <- j + 1", "\t\telágazás vége", "\tciklus vége", "eljárás vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

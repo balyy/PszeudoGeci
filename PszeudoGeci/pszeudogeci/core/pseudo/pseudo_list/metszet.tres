@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://sl6773acfgrx"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Két tömb metszete (2.18)"
+input = "x1: T tömb, n1: egész, x2: T tömb, n2: egész"
+output = "y: T tömb, db: egész"
+lines = Array[String](["függvény Metszet(x1: T tömb, n1: egész, x2: T tömb, n2: egész)", "	y <- Létrehoz(T)[n1]", "	db <- 0", "	ciklus i <- 1-től n1-ig", "		j <- 1", "		ciklus amíg (j <= n2) és (x1[i] != x2[j])", "			j <- j + 1", "		ciklus vége", "		ha j <= n2 akkor", "			db <- db + 1", "			y[db] <- x1[i]", "		elágazás vége", "	ciklus vége", "	vissza (y, db)", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

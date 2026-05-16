@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://ok0isaacfgsu"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Másolás és maximumkiválasztás (2.25)"
+input = "x: T tömb, n: egész, f: művelet"
+output = "max: egész, maxérték: T"
+lines = Array[String](["függvény Másolás_Maximumkiválasztás(x: T tömb, n: egész, f: művelet)", "\tmax <- 1", "\tmaxérték <- f(x[1])", "\tciklus i <- 2-től n-ig", "\t\tsegéd <- f(x[i])", "\t\tha maxérték < segéd akkor", "\t\t\tmax <- i", "\t\t\tmaxérték <- segéd", "\t\telágazás vége", "\tciklus vége", "\tvissza (max, maxérték)", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

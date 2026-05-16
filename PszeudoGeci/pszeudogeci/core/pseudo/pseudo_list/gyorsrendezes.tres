@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://gyorsrendezes604"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Gyorsrendezés (6.4)"
+input = "x: T tömb, bal: egész, jobb: egész"
+output = "helyben rendezi x-et"
+lines = Array[String](["eljárás GyorsRendezés(címszerint x: T tömb, bal: egész, jobb: egész)", "\tidx <- Szétválogat(x, bal, jobb)", "\tha idx > bal + 1 akkor", "\t\tGyorsRendezés(x, bal, idx - 1)", "\telágazás vége", "\tha idx < jobb - 1 akkor", "\t\tGyorsRendezés(x, idx + 1, jobb)", "\telágazás vége", "eljárás vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

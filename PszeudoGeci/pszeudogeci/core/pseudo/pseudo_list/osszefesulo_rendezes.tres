@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://osszefesulor602"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Összefésülő rendezés (6.2)"
+input = "x: T tömb, bal: egész, jobb: egész"
+output = "helyben rendezi x-et"
+lines = Array[String](["eljárás ÖsszefésülőRendezés(címszerint x: T tömb, bal: egész, jobb: egész)", "\tha bal < jobb akkor", "\t\tcenter <- [(bal+jobb)/2]", "\t\tÖsszefésülőRendezés(x, bal, center)", "\t\tÖsszefésülőRendezés(x, center + 1, jobb)", "\t\tÖsszefésül(x, bal, center, jobb)", "\telágazás vége", "eljárás vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

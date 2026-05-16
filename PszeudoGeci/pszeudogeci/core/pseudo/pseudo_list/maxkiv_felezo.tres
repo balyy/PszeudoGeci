@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://maxkivfelezo601"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Felező maximumkiválasztás (Oszd meg és uralkodj - 6.1)"
+input = "x: T tömb, bal: egész, jobb: egész"
+output = "balmax vagy jobbmax (egész index)"
+lines = Array[String](["függvény FelezőMaximumkiválasztás(x: T tömb, bal: egész, jobb: egész)", "\tha bal = jobb akkor", "\t\tvissza bal", "\tkülönben", "\t\tcenter <- [(bal+jobb)/2]", "\t\tbalmax <- FelezőMaximumkiválasztás(x, bal, center)", "\t\tjobbmax <- FelezőMaximumkiválasztás(x, center + 1, jobb)", "\t\tha x[balmax] >= x[jobbmax] akkor", "\t\t\tvissza balmax", "\t\tkülönben", "\t\t\tvissza jobbmax", "\t\telágazás vége", "\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

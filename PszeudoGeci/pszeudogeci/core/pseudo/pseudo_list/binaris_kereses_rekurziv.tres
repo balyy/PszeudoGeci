@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://d0houtl8qkfgg"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Logaritmikus keresés rekurzív megvalósítása (5.3)"
+input = "x: T rendezett tömb, bal: egész, jobb: egész, érték: T"
+output = "idx: egész (vagy 0)"
+lines = Array[String](["függvény LogaritmikusKeresésRekurzív(x: T rendezett tömb, bal: egész, jobb: egész, érték: T)", "\tha bal > jobb akkor", "\t\tvissza 0", "\tkülönben", "\t\tcenter <- [(bal+jobb)/2]", "\t\tha x[center] = érték akkor", "\t\t\tvissza center", "\t\tkülönben", "\t\t\tha x[center] > érték akkor", "\t\t\t\tvissza LogaritmikusKeresésRekurzív(x, bal, center - 1, érték)", "\t\t\tkülönben", "\t\t\t\tvissza LogaritmikusKeresésRekurzív(x, center + 1, jobb, érték)", "\t\t\telágazás vége", "\t\telágazás vége", "\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

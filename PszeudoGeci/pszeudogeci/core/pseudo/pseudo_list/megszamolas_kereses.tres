@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://r76r71acfgsw"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Megszámolás és keresés (2.27)"
+input = "x: T tömb, n: egész, P: logikai, k: egész"
+output = "van: logikai, idx: egész"
+lines = Array[String](["függvény Megszámolás_Keresés(x: T tömb, n: egész, P: logikai, k: egész)", "\tdb <- 0", "\ti <- 0", "\tciklus amíg (i < n) és (db < k)", "\t\ti <- i + 1", "\t\tha P(x[i]) akkor", "\t\t\tdb <- db + 1", "\t\telágazás vége", "\tciklus vége", "\tvan <- (db = k)", "\tha van akkor", "\t\tidx <- i", "\t\tvissza (van, idx)", "\tkülönben", "\t\tvissza van", "\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

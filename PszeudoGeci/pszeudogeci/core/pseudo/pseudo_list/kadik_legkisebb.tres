@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://kadiklegkisebb606"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "k-adik legkisebb elem kiválasztása (6.6)"
+input = "x: T tömb, bal: egész, jobb: egész, k: egész"
+output = "k-adik legkisebb tömbelem értéke"
+lines = Array[String](["függvény k-adikLegkisebbElem(x: T tömb, bal: egész, jobb: egész, k: egész)", "\tha bal = jobb akkor", "\t\tvissza x[bal]", "\tkülönben", "\t\tidx <- Szétválogat(x, bal, jobb)", "\t\tha k = idx - bal + 1 akkor", "\t\t\tvissza x[idx]", "\t\tkülönben ha k < idx - bal + 1 akkor", "\t\t\tvissza k-adikLegkisebbElem(x, bal, idx - 1, k)", "\t\tkülönben", "\t\t\tvissza k-adikLegkisebbElem(x, idx + 1, jobb, k - (idx - bal + 1))", "\t\telágazás vége", "\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

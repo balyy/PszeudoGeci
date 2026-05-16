@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://bw0u1rptk7ky3"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Növekvő rendezettség vizsgálata (2.5)"
+input = "x: T tömb, n: egész"
+output = "rendezett: logikai"
+lines = Array[String](["függvény Rendezett_E(x: T tömb, n: egész)", "\ti <- 1", "\tciklus amíg (i <= n - 1) és (x[i] <= x[i + 1])", "\t\ti <- i + 1", "\tciklus vége", "\trendezett <- (i > n - 1)", "\tvissza rendezett", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

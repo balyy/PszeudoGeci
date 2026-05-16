@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://cr2u3tp0rmclh"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Kiválogatás és maximumkiválasztás (2.30)"
+input = "x: T tömb, n: egész, P: logikai"
+output = "van: logikai, max: egész, maxérték: T"
+lines = Array[String](["függvény Kiválogatás_Maximumkiválasztás(x: T tömb, n: egész, P: logikai)", "\tmaxérték <- -∞", "\tciklus i <- 1-től n-ig", "\t\tha P(x[i]) és (x[i] > maxérték) akkor", "\t\t\tmax <- i", "\t\t\tmaxérték <- x[i]", "\t\telágazás vége", "\tciklus vége", "\tvan <- (maxérték > -∞)", "\tha van akkor", "\t\tvissza (van, max, maxérték)", "\tkülönben", "\t\tvissza van", "\telágazás vége", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

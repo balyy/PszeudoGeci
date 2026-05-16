@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://gyorsszetvalog605"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Gyorsrendezés szétválogatása (6.5)"
+input = "x: T tömb, bal: egész, jobb: egész"
+output = "x: T tömb, idx: egész"
+lines = Array[String](["függvény Szétválogat(címszerint x: T tömb, bal: egész, jobb: egész)", "\tsegéd <- x[bal]", "\tciklus amíg bal < jobb", "\t\tciklus amíg (bal < jobb) és (x[jobb] > segéd)", "\t\t\tjobb <- jobb - 1", "\t\tciklus vége", "\t\tha bal < jobb akkor", "\t\t\tx[bal] <- x[jobb]", "\t\t\tbal <- bal + 1", "\t\t\tciklus amíg (bal < jobb) és (x[bal] <= segéd)", "\t\t\t\tbal <- bal + 1", "\t\t\tciklus vége", "\t\t\tha bal < jobb akkor", "\t\t\t\tx[jobb] <- x[bal]", "\t\t\t\tjobb <- jobb - 1", "\t\t\telágazás vége", "\t\telágazás vége", "\tciklus vége", "\tidx <- bal", "\tx[idx] <- segéd", "\tvissza idx", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

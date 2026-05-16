@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://dvu6wuq4tkhvk"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Részhalmaz vizsgálat (5.13)"
+input = "a: T halmaz, m: egész, b: T halmaz, n: egész"
+output = "l: logikai"
+lines = Array[String](["függvény Részhalmaz_e(a: T halmaz, m: egész, b: T halmaz, n: egész)", "\ti <- 1", "\tj <- 1", "\tciklus amíg (i <= m) és (j <= n) és (a[i] >= b[j])", "\t\tha a[i] = b[j] akkor", "\t\t\ti <- i + 1", "\t\telágazás vége", "\t\tj <- j + 1", "\tciklus vége", "\tl <- (i > m)", "\tvissza l", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

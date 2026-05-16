@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://coe11jngghh18"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Halmazok uniója strázsa elemmel (5.14)"
+input = "a1: T halmaz, n1: egész, a2: T halmaz, n2: egész"
+output = "b: T halmaz, db: egész"
+lines = Array[String](["függvény HalmazUnió(a1: T halmaz, n1: egész, a2: T halmaz, n2: egész)", "\tb <- Létrehoz(T)[n1 + n2]", "\ti <- 1", "\tj <- 1", "\tdb <- 0", "\tn1 <- n1 + 1", "\ta1[n1] <- +∞", "\tn2 <- n2 + 1", "\ta2[n2] <- +∞", "\tciklus amíg (i < n1) vagy (j < n2)", "\t\tdb <- db + 1", "\t\tha a1[i] < a2[j] akkor", "\t\t\tb[db] <- a1[i]", "\t\t\ti <- i + 1", "\t\tkülönben", "\t\t\tha a1[i] > a2[j] akkor", "\t\t\t\tb[db] <- a2[j]", "\t\t\t\tj <- j + 1", "\t\t\tkülönben", "\t\t\t\tb[db] <- a1[i]", "\t\t\t\ti <- i + 1", "\t\t\t\tj <- j + 1", "\t\t\telágazás vége", "\t\telágazás vége", "\tciklus vége", "\tvissza (b, db)", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://maxkiv000210"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Maximumkiválasztás programozási tétel (2.10)"
+input = "x: T tömb, n: egész"
+output = "max: egész"
+lines = Array[String](["függvény Maximumkiválasztás(x: T tömb, n: egész)", "\tmax <- 1", "\tciklus i <- 2-től n-ig", "\t\tha x[i] > x[max] akkor", "\t\t\tmax <- i", "\t\telágazás vége", "\tciklus vége", "\tvissza max", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

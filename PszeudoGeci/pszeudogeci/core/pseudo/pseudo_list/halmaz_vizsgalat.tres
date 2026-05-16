@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://halma0e510"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Halmaztulajdonság vizsgálata (5.10)"
+input = "x: T rendezett tömb, n: egész"
+output = "l: logikai"
+lines = Array[String](["függvény HalmazE(x: T rendezett tömb, n: egész)", "\ti <- 2", "\tciklus amíg (i <= n) és (x[i] != x[i - 1])", "\t\ti <- i + 1", "\tciklus vége", "\tl <- (i > n)", "\tvissza l", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"

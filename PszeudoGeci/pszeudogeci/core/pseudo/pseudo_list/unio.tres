@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Pseudo" load_steps=2 format=3 uid="uid://bchc2qfq60pa6"]
+
+[ext_resource type="Script" uid="uid://bilbv0dlql50b" path="res://core/pseudo/pseudo.gd" id="1_qf36u"]
+
+[resource]
+script = ExtResource("1_qf36u")
+name = "Két tömb uniója (2.20)"
+input = "x1: T tömb, n1: egész, x2: T tömb, n2: egész"
+output = "y: T tömb, db: egész"
+lines = Array[String](["függvény Unió(x1: T tömb, n1: egész, x2: T tömb, n2: egész)", "\ty <- Létrehoz(T)[n1 + n2]", "\tciklus i <- 1-től n1-ig", "\t\ty[i] <- x1[i]", "\tciklus vége", "\tdb <- n1", "\tciklus j <- 1-től n2-ig", "\t\ti <- 1", "\t\tciklus amíg (i <= n1) és (x1[i] != x2[j])", "\t\t\ti <- i + 1", "\t\tciklus vége", "\t\tha i > n1 akkor", "\t\t\tdb <- db + 1", "\t\t\ty[db] <- x2[j]", "\t\telágazás vége", "\tciklus vége", "\tvissza (y, db)", "függvény vége"])
+metadata/_custom_type_script = "uid://bilbv0dlql50b"
